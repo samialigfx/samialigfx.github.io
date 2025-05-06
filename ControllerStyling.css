@@ -1,0 +1,82 @@
+/* Xbox Controller Styling */
+.controller.xbox {
+    background: url("Basemood.png");
+    width: 750px;
+    height: 630px;
+    position: relative;
+}
+
+/* Base button styling */
+.xbox .button {
+    position: absolute;
+    background: url("Button.png");
+    width: 48px;
+    height: 48px;
+    opacity: 0.9;
+}
+
+/* Press effect (move sprite position down) */
+.xbox .button.pressed {
+    background-position-y: -48px;
+    margin-top: 2px;
+    opacity: 1;
+}
+
+/* A, B, X, Y buttons (assuming sprite order: A | B | X | Y) */
+.xbox .a {
+    background-position: 0 0;
+    top: 108px;
+    left: 55px;
+}
+
+.xbox .b {
+    background-position: -48px 0;
+    top: 58px;
+    right: 0px;
+}
+
+.xbox .x {
+    background-position: -96px 0;
+    top: 58px;
+    left: 4px;
+}
+
+.xbox .y {
+    background-position: -144px 0;
+    top: 7px;
+    left: 55px;
+}
+
+/* Sticks container */
+.xbox .sticks {
+    position: absolute;
+    width: 371px;
+    height: 196px;
+    top: 239px;
+    left: 144px;
+}
+
+/* Stick base styling */
+.xbox .stick {
+    position: absolute;
+    background: url("stickmod.png");
+    width: 83px;
+    height: 83px;
+    background-position: -85px 0;
+}
+
+/* When stick is pressed */
+.xbox .stick.pressed {
+    background-position: 0 0;
+}
+
+/* Stick positions */
+.xbox .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.xbox .stick.right {
+    top: 113px;
+    left: 288px;
+}
